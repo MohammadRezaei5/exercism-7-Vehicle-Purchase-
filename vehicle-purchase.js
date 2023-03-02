@@ -18,3 +18,20 @@ function chooseVehicle(option1, option2) {
 //   chooseVehicle("Wuling Hongguang", "Toyota Corolla"),
 //   chooseVehicle("Volkswagen Beetle", "Volkswagen Golf")
 // );
+
+///***///
+
+function calculateResellPrice(originalPrice, age) {
+  if (age > 10) {
+    return 0.5 * originalPrice;
+  } else if (age < 3) {
+    return 0.8 * originalPrice;
+  }
+  return 0.7 * originalPrice;
+}
+
+// console.log(
+//   calculateResellPrice(1000, 1),
+//   calculateResellPrice(1000, 5),
+//   calculateResellPrice(1000, 15)
+// );
